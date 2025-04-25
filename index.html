@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Pablo Tomás Forero</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="assets/pdf/hojaDeVida_pabloForero.pdf" download="Hoja_de_Vida_Pablo_Tomás_Forero_Salazar">Descargar CV</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sobre-mi" class="section">
+        <h1>Sobre mí</h1>
+        <p>Hola, soy Pablo Tomás Forero Salazar, un apasionado por la programación, el culturismo y la música clásica. Estoy desarrollando mi carrera en Ingeniería en Sistemas y siempre estoy buscando mejorar mis habilidades.</p>
+    </section>
+
+    <section id="habilidades" class="section">
+        <h1>Habilidades</h1>
+        <div class="habilidades-container">
+            <div class="habilidad">
+                <h3>Programación</h3>
+                <p>HTML, CSS, JavaScript, React</p>
+            </div>
+            <div class="habilidad">
+                <h3>Desarrollo Web</h3>
+                <p>Frontend, Backend, Fullstack</p>
+            </div>
+            <div class="habilidad">
+                <h3>Físico culturismo</h3>
+                <p>Entrenamiento y nutrición deportiva</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <h1>Contacto</h1>
+        <form id="form-contacto" action="mailto:pabloforerosal@gmail.com" method="POST" enctype="multipart/form-data">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respuesta"></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Pablo Tomás Forero Salazar. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
